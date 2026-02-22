@@ -1,8 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "",
+  "name": "Lite Chrome App Launcher",
   "version": "4.0",
   "description": "The Lite version Of Chrome App Launcher",
-  "permissions": ["tsis", "", "favicon"],
-  "host_permissions": ["<all_urls>"]
+
+  "permissions": [
+    "sidePanel"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Launcher"
+  },
+
+  "side_panel": {
+    "default_path": "index.html"
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
